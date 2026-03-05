@@ -4,7 +4,7 @@
     <id>JSIL.Meta</id>
     <version>$version$</version>
     <authors>Squared Interactive</authors>
-    <icon>jsil.ico</icon>
+    <icon>jsil.png</icon>
     <readme>README.md</readme>
     <description>JSIL Meta</description>
     <language>en-US</language>
@@ -12,8 +12,8 @@
     <licenseUrl>https://github.com/sq/JSIL/blob/master/LICENSE</licenseUrl>
   </metadata>
   <files>
-    <file src="..\jsil.ico" target="\" />
     <file src="..\README.md" target="\" />
+    <file src="..\jsil.org\images\jsil_96px.png" target="\jsil.png" />
     <file src="..\bin\JSIL.Meta.dll" target="lib\" />
     <file src="..\bin\JSIL.Meta.pdb" target="lib\" />
     <file src="..\bin\JSIL.Meta.xml" target="lib\" />

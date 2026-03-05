@@ -4,7 +4,7 @@
     <id>JSIL.Compiler</id>
     <version>$version$</version>
     <authors>Squared Interactive</authors>
-    <icon>jsil.ico</icon>
+    <icon>jsil.png</icon>
     <readme>README.md</readme>
     <description>JSIL Command Line Compiler</description>
     <language>en-US</language>
@@ -12,8 +12,8 @@
     <licenseUrl>https://github.com/sq/JSIL/blob/master/LICENSE</licenseUrl>
   </metadata>
   <files>
-    <file src="..\jsil.ico" target="\" />
     <file src="..\README.md" target="\" />
+    <file src="..\jsil.org\images\jsil_96px.png" target="\jsil.png" />
     <file src="..\bin\defaults.jsilconfig" target="tools\" />
     <file src="..\bin\ICSharpCode.Decompiler.dll" target="tools\" />
     <file src="..\bin\ICSharpCode.NRefactory.CSharp.dll" target="tools\" />

@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <id>JSIL.Meta</id>
+    <id>JSIL.Libraries</id>
     <version>$version$</version>
     <authors>Squared Interactive</authors>
-    <icon>jsil.ico</icon>
+    <icon>jsil.png</icon>
     <readme>README.md</readme>
-    <description>JSIL Meta</description>
+    <description>JSIL JS Libraries</description>
     <language>en-US</language>
     <projectUrl>https://github.com/sq/JSIL</projectUrl>
     <licenseUrl>https://github.com/sq/JSIL/blob/master/LICENSE</licenseUrl>
   </metadata>
   <files>
-    <file src="..\jsil.ico" target="\" />
     <file src="..\README.md" target="\" />
+    <file src="..\jsil.org\images\jsil_96px.png" target="\jsil.png" />
     <file src="..\Libraries" target="staticwebassets\Libraries\" />
   </files>
 </package>
