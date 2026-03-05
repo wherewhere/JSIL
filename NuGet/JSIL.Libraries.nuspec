@@ -4,12 +4,12 @@
     <id>JSIL.Libraries</id>
     <version>$version$</version>
     <authors>Squared Interactive</authors>
+    <license type="expression">MIT</license>
     <icon>jsil.png</icon>
     <readme>README.md</readme>
     <description>JSIL JS Libraries</description>
     <language>en-US</language>
     <projectUrl>https://github.com/sq/JSIL</projectUrl>
-    <licenseUrl>https://github.com/sq/JSIL/blob/master/LICENSE</licenseUrl>
   </metadata>
   <files>
     <file src="..\README.md" target="\" />
