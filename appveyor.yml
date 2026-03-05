@@ -10,5 +10,7 @@ build_script:
 artifacts:
   - path: bin
     name: JSIL.bin
+  - path: Libraries
+    name: JSIL.Libraries
 test_script:
   - nunit-console-x86 bin\Tests.DCE.dll bin\SimpleTests.dll bin\Tests.dll /include:"FailsOnMono|(FailsOnMonoWhenStubbed+Stubbed)|(FailsOnMonoWhenStubbed+Translated)"
