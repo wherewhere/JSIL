@@ -14,6 +14,6 @@
   <files>
     <file src="..\README.md" target="\" />
     <file src="..\jsil.org\images\jsil_96px.png" target="\jsil.png" />
-    <file src="..\Libraries" target="staticwebassets\Libraries\" />
+    <file src="..\Libraries\**" target="staticwebassets\Libraries\" />
   </files>
 </package>
