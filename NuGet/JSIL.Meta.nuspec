@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>JSIL.Meta</id>
+    <version>$version$</version>
+    <authors>Squared Interactive</authors>
+    <icon>jsil.ico</icon>
+    <readme>README.md</readme>
+    <description>JSIL Meta</description>
+    <language>en-US</language>
+    <projectUrl>https://github.com/sq/JSIL</projectUrl>
+    <licenseUrl>https://github.com/sq/JSIL/blob/master/LICENSE</licenseUrl>
+  </metadata>
+  <files>
+    <file src="..\jsil.ico" target="\" />
+    <file src="..\README.md" target="\" />
+    <file src="..\bin\JSIL.Meta.dll" target="lib\" />
+    <file src="..\bin\JSIL.Meta.pdb" target="lib\" />
+    <file src="..\bin\JSIL.Meta.xml" target="lib\" />
+  </files>
+</package>

@@ -1,4 +1,4 @@
-version: 1.0.{build}
+version: 0.8.2.{build}
 cache:
   - "%TEMP%\\JSIL Tests" # preserve test compilation cache
   - packages -> **\packages.config  # preserve "packages" directory in the root of build folder but will reset it if packages.config is modified
@@ -7,10 +7,16 @@ install:
   - nuget restore JSIL.sln
 build_script:
   - msbuild "JSIL.sln" /m /verbosity:minimal /logger:"C:\Program Files\AppVeyor\BuildAgent\Appveyor.MSBuildLogger.dll" /P:Platform=NoXNA /p:Configuration=Release
+after_build:
+  - cmd: nuget pack NuGet\JSIL.Compiler.nuspec -version {version}
+  - cmd: nuget pack NuGet\JSIL.Libraries.nuspec -version {version}
+  - cmd: nuget pack NuGet\JSIL.Meta.nuspec -version {version}
 artifacts:
   - path: bin
-    name: JSIL.bin
+    name: JSIL.Bin
   - path: Libraries
     name: JSIL.Libraries
+  - path: '*.nupkg'
+    name: JSIL.NuGet
 test_script:
   - nunit-console-x86 bin\Tests.DCE.dll bin\SimpleTests.dll bin\Tests.dll /include:"FailsOnMono|(FailsOnMonoWhenStubbed+Stubbed)|(FailsOnMonoWhenStubbed+Translated)"
